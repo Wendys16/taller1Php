@@ -1,0 +1,182 @@
+{
+	"info": {
+		"_postman_id": "0af00626-f6d0-4a1f-879d-ae9d1ea0b4bf",
+		"name": "autos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15571214"
+	},
+	"item": [
+		{
+			"name": "Insertar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "placa_auto",
+							"value": "'555k5'",
+							"type": "text"
+						},
+						{
+							"key": "anho_modelo",
+							"value": "2015",
+							"type": "text"
+						},
+						{
+							"key": "modelo",
+							"value": "'modelo wmw34",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "254799.32",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/taller_1_php/autoCreate.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"taller_1_php",
+						"autoCreate.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "idAuto",
+							"value": "24",
+							"type": "text"
+						},
+						{
+							"key": "placa_auto",
+							"value": "555k5",
+							"type": "text"
+						},
+						{
+							"key": "anho_modelo",
+							"value": "2025",
+							"type": "text"
+						},
+						{
+							"key": "modelo",
+							"value": "modelo4",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "25799.3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/taller_1_php/autoUpdate.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"taller_1_php",
+						"autoUpdate.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "idAuto",
+							"value": "29",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/taller_1_php/autoDelete.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"taller_1_php",
+						"autoDelete.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Uno",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/taller_1_php/autoReadOne.php?idAuto=259",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"taller_1_php",
+						"autoReadOne.php"
+					],
+					"query": [
+						{
+							"key": "idAuto",
+							"value": "259"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Todo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/taller_1_php/autoReadAll.php?idAuto=259",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"taller_1_php",
+						"autoReadAll.php"
+					],
+					"query": [
+						{
+							"key": "idAuto",
+							"value": "259"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

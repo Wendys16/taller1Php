@@ -1,0 +1,210 @@
+{
+	"info": {
+		"_postman_id": "2332416e-ba5a-4254-9768-f5adb70b7dd5",
+		"name": "empleados",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15571214"
+	},
+	"item": [
+		{
+			"name": "Insertar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nombre",
+							"value": "WENDYS",
+							"type": "text"
+						},
+						{
+							"key": "apellido",
+							"value": "VARGAS MARTINEZ",
+							"type": "text"
+						},
+						{
+							"key": "fecha_hora_entrega",
+							"value": "2022-05-05 10:05:45",
+							"type": "text"
+						},
+						{
+							"key": "fecha_nacimiento",
+							"value": "1997-03-30",
+							"type": "text"
+						},
+						{
+							"key": "telefono",
+							"value": "32154789",
+							"type": "text"
+						},
+						{
+							"key": "estatura",
+							"value": "1.68",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "W.MARTINEZ@GMAIL.COM",
+							"type": "text"
+						},
+						{
+							"key": "idAuto",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/taller_1_php/empleadoCreate.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"taller_1_php",
+						"empleadoCreate.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "idEmpleado",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "nombre",
+							"value": "WENDYS",
+							"type": "text"
+						},
+						{
+							"key": "apellido",
+							"value": "VARGAS MARTINEZ",
+							"type": "text"
+						},
+						{
+							"key": "fecha_hora_entrega",
+							"value": "2022-05-05 10:05:45",
+							"type": "text"
+						},
+						{
+							"key": "fecha_nacimiento",
+							"value": "1997-03-30",
+							"type": "text"
+						},
+						{
+							"key": "telefono",
+							"value": "32154789",
+							"type": "text"
+						},
+						{
+							"key": "estatura",
+							"value": "1.68",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "W.MARTINEZ@GMAIL.COM",
+							"type": "text"
+						},
+						{
+							"key": "idAuto",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/taller_1_php/empleadoUpdate.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"taller_1_php",
+						"empleadoUpdate.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "idAuto",
+							"value": "29",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/taller_1_php/autoDelete.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"taller_1_php",
+						"autoDelete.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Uno",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/taller_1_php/empleadoReadAll.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"taller_1_php",
+						"empleadoReadAll.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Todo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/taller_1_php/empleadoReadAll.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"taller_1_php",
+						"empleadoReadAll.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
